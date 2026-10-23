@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="AKSARA Indonesia — layanan konsultasi hukum, pengelolaan media, penyediaan audiens kegiatan, dan talent pemeran pendukung.">
+<title>AKSARA Indonesia | Professional Services</title>
+<style>
+:root{--navy:#102b46;--navy2:#173d5d;--gold:#d6b779;--ink:#172433;--muted:#627184;--paper:#f7f8fa;--white:#fff;--line:#e3e8ee}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:#fff;line-height:1.65}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:10}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:850;letter-spacing:.12em;color:var(--navy);font-size:1.1rem}
+.brand-mark{width:42px;height:42px;border:1px solid var(--gold);border-radius:10px;display:grid;place-items:center;color:var(--gold);background:var(--navy);font-family:Georgia,serif;font-size:1.55rem}
+.brand small{display:block;font-size:.59rem;letter-spacing:.2em;font-weight:650;color:var(--muted);margin-top:-4px}
+nav{display:flex;gap:24px;align-items:center;font-size:.9rem;color:#435366}nav a:hover{color:#a17c37}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 18px;border-radius:8px;background:var(--gold);color:var(--navy);font-weight:750;border:0;cursor:pointer;transition:.2s}
+.btn:hover{transform:translateY(-1px);filter:brightness(.97)}.btn-outline{background:transparent;border:1px solid rgba(255,255,255,.42);color:white}
+.hero{background:radial-gradient(ellipse at 85% 20%,#234d6c 0%,transparent 42%),linear-gradient(120deg,#0d243a,#173d5d);color:#fff;padding:94px 0 88px;position:relative;overflow:hidden}
+.hero:after{content:"A";position:absolute;right:4%;bottom:-155px;font:700 32rem/1 Georgia,serif;color:rgba(255,255,255,.035);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:60px;align-items:center;position:relative;z-index:1}
+.eyebrow{color:var(--gold);font-size:.76rem;font-weight:800;letter-spacing:.19em;text-transform:uppercase}
+h1{font-size:clamp(2.55rem,5.5vw,4.7rem);line-height:1.07;letter-spacing:-.045em;margin:18px 0 22px;max-width:760px}
+.hero p{font-size:1.12rem;color:#dce5ed;max-width:620px;margin:0 0 30px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero-panel{border:1px solid rgba(214,183,121,.45);background:rgba(255,255,255,.055);padding:26px;border-radius:18px;backdrop-filter:blur(8px)}
+.hero-panel .big{font:2.4rem Georgia,serif;color:var(--gold)}.hero-panel p{font-size:.96rem;margin:6px 0 18px}.mini-list{display:grid;gap:12px}.mini-list div{display:flex;align-items:center;gap:10px;color:#e8eef3;font-size:.9rem}.dot{width:8px;height:8px;border-radius:50%;background:var(--gold);flex-shrink:0}
+section{padding:82px 0}.section-head{max-width:700px;margin-bottom:34px}.section-head h2{font-size:clamp(1.9rem,3.6vw,2.8rem);letter-spacing:-.035em;line-height:1.15;color:var(--navy);margin:10px 0 14px}.section-head p{color:var(--muted);margin:0}
+.services{background:var(--paper)}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px 21px;transition:.2s;min-height:270px}
+.card:hover{transform:translateY(-4px);box-shadow:0 15px 36px rgba(16,43,70,.08);border-color:#d8c59c}
+.icon{width:48px;height:48px;border-radius:12px;background:#f5efdf;color:#8d6b2f;display:grid;place-items:center;font-size:1.35rem;margin-bottom:22px}
+.card h3{color:var(--navy);margin:0 0 10px;font-size:1.14rem}.card p{color:var(--muted);font-size:.92rem;margin:0 0 16px}.tag{font-size:.74rem;color:#8d6b2f;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:64px;align-items:center}
+.about-art{background:var(--navy);border-radius:18px;min-height:350px;padding:35px;display:flex;flex-direction:column;justify-content:space-between;color:white;position:relative;overflow:hidden}
+.about-art:after{content:"AKSARA";position:absolute;right:-30px;bottom:55px;font-size:4rem;font-weight:900;letter-spacing:.1em;color:rgba(255,255,255,.07);transform:rotate(-90deg);transform-origin:right bottom}
+.about-art blockquote{font:italic 1.7rem/1.35 Georgia,serif;margin:30px 0;color:#fff;max-width:330px;position:relative;z-index:1}
+.about-art .eyebrow{position:relative;z-index:1}.about-copy h2{font-size:2.35rem;line-height:1.15;color:var(--navy);letter-spacing:-.04em;margin:10px 0 18px}.about-copy p{color:var(--muted)}
+.values{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px}.value{border-left:3px solid var(--gold);padding:2px 0 2px 13px}.value b{display:block;color:var(--navy)}.value span{font-size:.88rem;color:var(--muted)}
+.process{background:#f7f8fa}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.step{padding:24px;background:#fff;border:1px solid var(--line);border-radius:12px}.step-num{font:2rem Georgia,serif;color:#b08a45}.step h3{margin:7px 0;color:var(--navy)}.step p{color:var(--muted);font-size:.92rem;margin:0}
+.cta{background:var(--navy);color:#fff;padding:68px 0}.cta-inner{display:flex;justify-content:space-between;align-items:center;gap:30px}.cta h2{font-size:clamp(1.8rem,3.5vw,2.7rem);line-height:1.15;margin:8px 0 10px}.cta p{color:#d5e0e8;margin:0;max-width:650px}
+.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:55px}.contact-info h2{font-size:2.3rem;color:var(--navy);line-height:1.15;margin:10px 0}.contact-info p{color:var(--muted)}.contact-note{padding:17px;background:#f7f8fa;border-radius:10px;border:1px solid var(--line);font-size:.9rem;color:var(--muted);margin-top:24px}
+form{display:grid;gap:15px}.field{display:grid;gap:6px}.field label{font-size:.88rem;font-weight:700;color:var(--navy)}input,select,textarea{font:inherit;padding:12px 13px;border:1px solid #d6dee6;border-radius:8px;background:#fff;color:var(--ink);width:100%}textarea{min-height:115px;resize:vertical}input:focus,select:focus,textarea:focus{outline:2px solid #d6b779;outline-offset:1px}.form-help{font-size:.8rem;color:var(--muted);margin:0}
+footer{background:#0b1d2e;color:#d8e0e8;padding:28px 0}.footer-row{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}.footer-brand{font-weight:850;letter-spacing:.14em;color:white}.footer-row small{color:#a9b8c6}
+@media(max-width:900px){.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr;gap:34px}.hero-panel{max-width:560px}.cards{grid-template-columns:repeat(2,1fr)}.about-art{min-height:280px}.cta-inner{align-items:flex-start;flex-direction:column}}
+@media(max-width:620px){.wrap{width:min(100% - 28px,1120px)}.nav{height:66px}nav{display:none}.nav .btn{padding:10px 12px;font-size:.82rem}.hero{padding:70px 0 64px}.hero-grid{gap:38px}section{padding:62px 0}.cards,.steps{grid-template-columns:1fr}.card{min-height:auto}.values{grid-template-columns:1fr}.hero-panel{padding:22px}.about-copy h2{font-size:2rem}.cta{padding:54px 0}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#beranda" aria-label="AKSARA Indonesia beranda"><span class="brand-mark">A</span><span>AKSARA<small>INDONESIA</small></span></a>
+    <nav aria-label="Navigasi utama"><a href="#layanan">Layanan</a><a href="#tentang">Tentang</a><a href="#alur">Cara Kerja</a><a href="#kontak">Kontak</a></nav>
+    <a class="btn" href="#kontak">Hubungi Kami ↗</a>
+  </div>
+</header>
+<main>
+<section class="hero" id="beranda">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Professional Services · Indonesia</div>
+      <h1>Menghubungkan Kebutuhan, <span style="color:var(--gold)">Menghadirkan Solusi.</span></h1>
+      <p>AKSARA hadir sebagai mitra profesional untuk kebutuhan konsultasi hukum, pengelolaan media, dukungan audiens kegiatan, serta penyediaan talent dan pemeran pendukung.</p>
+      <div class="hero-actions"><a class="btn" href="#layanan">Jelajahi Layanan ↓</a><a class="btn btn-outline" href="#kontak">Diskusikan Kebutuhan Anda</a></div>
+    </div>
+    <aside class="hero-panel">
+      <div class="eyebrow">Satu Mitra, Beragam Solusi</div>
+      <div class="big">AKSARA</div>
+      <p>Membangun kolaborasi yang tepat melalui layanan yang terencana, komunikatif, dan berorientasi pada kebutuhan klien.</p>
+      <div class="mini-list"><div><span class="dot"></span>Konsultasi dan advokasi hukum</div><div><span class="dot"></span>Media dan komunikasi digital</div><div><span class="dot"></span>Dukungan audiens kegiatan</div><div><span class="dot"></span>Talent dan pemeran pendukung</div></div>
+    </aside>
+  </div>
+</section>
+<section class="services" id="layanan">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow">Layanan Kami</div><h2>Solusi yang dirancang sesuai kebutuhan Anda.</h2><p>Kami membantu individu, organisasi, pelaku usaha, dan penyelenggara kegiatan menghubungkan kebutuhan dengan dukungan layanan yang relevan.</p></div>
+    <div class="cards">
+      <article class="card"><div class="icon" aria-hidden="true">⚖</div><div class="tag">01 · Legal</div><h3>Konsultasi & Advokasi Hukum</h3><p>Layanan konsultasi, analisis permasalahan, penyusunan dokumen, serta pendampingan sesuai kebutuhan dan kewenangan yang berlaku.</p><a class="tag" href="#kontak">Diskusikan kebutuhan ↗</a></article>
+      <article class="card"><div class="icon" aria-hidden="true">▣</div><div class="tag">02 · Media</div><h3>Pengelolaan Media</h3><p>Dukungan pengelolaan media sosial, perencanaan konten, publikasi, dan komunikasi digital untuk membangun kehadiran yang konsisten.</p><a class="tag" href="#kontak">Diskusikan kebutuhan ↗</a></article>
+      <article class="card"><div class="icon" aria-hidden="true">◉</div><div class="tag">03 · Audience</div><h3>Penyediaan Audiens Kegiatan</h3><p>Dukungan penyediaan audiens atau peserta melalui jaringan mitra untuk acara, kegiatan promosi, dan produksi konten sesuai kesepakatan.</p><a class="tag" href="#kontak">Diskusikan kebutuhan ↗</a></article>
+      <article class="card"><div class="icon" aria-hidden="true">▸</div><div class="tag">04 · Talent</div><h3>Talent & Pemeran Pendukung</h3><p>Penyediaan talent dan figuran untuk film, serial, iklan, video promosi, dokumentasi, serta kebutuhan produksi audiovisual lainnya.</p><a class="tag" href="#kontak">Diskusikan kebutuhan ↗</a></article>
+    </div>
+  </div>
+</section>
+<section id="tentang">
+  <div class="wrap about-grid">
+    <div class="about-art"><div class="eyebrow">Tentang AKSARA</div><blockquote>“Setiap kebutuhan memiliki jalan menuju solusi melalui kolaborasi yang tepat.”</blockquote><div style="color:#d6b779;font-size:.82rem;letter-spacing:.14em;font-weight:800">PROFESIONAL · KOLABORATIF · ADAPTIF</div></div>
+    <div class="about-copy"><div class="eyebrow">Mitra Anda</div><h2>Kolaborasi yang dimulai dari memahami kebutuhan.</h2><p>AKSARA Indonesia menghubungkan kebutuhan klien dengan layanan dan jaringan mitra yang relevan. Kami mengutamakan komunikasi yang jelas, ruang lingkup pekerjaan yang disepakati, serta pelaksanaan layanan secara profesional.</p><p>Setiap pekerjaan dibahas berdasarkan tujuan, kebutuhan, waktu pelaksanaan, dan ketentuan yang berlaku agar kerja sama berjalan dengan jelas sejak awal.</p><div class="values"><div class="value"><b>Komunikatif</b><span>Koordinasi yang jelas dan terbuka.</span></div><div class="value"><b>Terarah</b><span>Layanan sesuai tujuan dan kebutuhan.</span></div><div class="value"><b>Kolaboratif</b><span>Bekerja bersama jaringan mitra.</span></div><div class="value"><b>Bertanggung jawab</b><span>Kesepakatan dan ruang lingkup yang jelas.</span></div></div></div>
+  </div>
+</section>
+<section class="process" id="alur">
+  <div class="wrap"><div class="section-head"><div class="eyebrow">Cara Kerja</div><h2>Mudah, jelas, dan terkoordinasi.</h2><p>Alur awal kerja sama agar kebutuhan Anda dapat dipahami dan ditindaklanjuti secara tepat.</p></div>
+    <div class="steps"><article class="step"><div class="step-num">01</div><h3>Sampaikan Kebutuhan</h3><p>Ceritakan layanan yang dibutuhkan, tujuan, lokasi, jadwal, dan perkiraan ruang lingkup pekerjaan.</p></article><article class="step"><div class="step-num">02</div><h3>Diskusi & Penawaran</h3><p>Kami mendiskusikan pilihan layanan, ketersediaan, detail pelaksanaan, dan penawaran berdasarkan kebutuhan.</p></article><article class="step"><div class="step-num">03</div><h3>Sepakati Pelaksanaan</h3><p>Setelah detail dan ketentuan disetujui, pekerjaan dikoordinasikan sesuai kesepakatan bersama.</p></article></div>
+  </div>
+</section>
+<section class="cta"><div class="wrap cta-inner"><div><div class="eyebrow">Mari Berkolaborasi</div><h2>Ada kebutuhan yang ingin Anda diskusikan?</h2><p>Ceritakan rencana Anda. AKSARA siap membantu membahas layanan yang paling sesuai.</p></div><a class="btn" href="#kontak">Mulai Konsultasi ↗</a></div></section>
+<section id="kontak">
+  <div class="wrap contact-grid">
+    <div class="contact-info"><div class="eyebrow">Hubungi Kami</div><h2>Mari mulai percakapan.</h2><p>Isi formulir berikut untuk menyiapkan pesan permintaan layanan. Setelah nomor WhatsApp AKSARA ditambahkan, formulir dapat diarahkan langsung ke WhatsApp.</p><div class="contact-note"><b>Catatan:</b> Informasi kontak resmi, alamat, tautan media sosial, dan nomor WhatsApp perlu dilengkapi sebelum website dipublikasikan.</div></div>
+    <form id="contactForm">
+      <div class="field"><label for="nama">Nama</label><input id="nama" name="nama" placeholder="Nama Anda" required></div>
+      <div class="field"><label for="organisasi">Instansi / Perusahaan (opsional)</label><input id="organisasi" name="organisasi" placeholder="Nama instansi atau perusahaan"></div>
+      <div class="field"><label for="layananPilihan">Layanan yang dibutuhkan</label><select id="layananPilihan" name="layanan" required><option value="">Pilih layanan</option><option>Konsultasi dan Advokasi Hukum</option><option>Pengelolaan Media</option><option>Penyediaan Audiens Kegiatan</option><option>Talent dan Pemeran Pendukung</option><option>Kerja Sama Lainnya</option></select></div>
+      <div class="field"><label for="pesan">Ceritakan kebutuhan Anda</label><textarea id="pesan" name="pesan" placeholder="Tujuan, lokasi, jadwal, dan detail kebutuhan..." required></textarea></div>
+      <button class="btn" type="submit">Siapkan Pesan Permintaan ↗</button>
+      <p class="form-help" id="formHelp">Formulir ini menyiapkan teks pesan di perangkat Anda. Pengiriman langsung akan aktif setelah kontak WhatsApp resmi ditambahkan.</p>
+    </form>
+  </div>
+</section>
+</main>
+<footer><div class="wrap footer-row"><div><div class="footer-brand">AKSARA INDONESIA</div><small>Professional Services</small></div><small>© <span id="year"></span> AKSARA Indonesia. Semua hak dilindungi.</small></div></footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('contactForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ const data=new FormData(e.target);
+ const message=`Permintaan Layanan AKSARA Indonesia\nNama: ${data.get('nama')}\nInstansi: ${data.get('organisasi')||'-'}\nLayanan: ${data.get('layanan')}\nKebutuhan: ${data.get('pesan')}`;
+ const blob=new Blob([message],{type:'text/plain;charset=utf-8'});
+ const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='permintaan-layanan-aksara.txt';a.click();URL.revokeObjectURL(url);
+ document.getElementById('formHelp').textContent='Pesan permintaan berhasil disiapkan sebagai file teks. Hubungi AKSARA melalui kontak resmi untuk mengirimkannya.';
+});
+</script>
+</body>
+</html>
